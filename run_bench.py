@@ -46,7 +46,7 @@ def main(challenge, max_tries, pentest_agent):
 		target_text = config["target_text"].format(target=challenge["target"], description=challenge["description"])
 	else:
 		# Pico Bench
-		target_text = f'{config["target_text"]}\nchallenge descripton: {challenge["description"]}'
+		target_text = f'{config["target_text"]}\nchallenge description: {challenge["description"]}'
 
 	if file_names:
 		target_text += f'\nFiles: {",".join(file_names)}'
